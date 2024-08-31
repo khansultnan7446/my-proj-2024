@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Parent Container */
+.parent {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Labels */
+.parent label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Fields */
+.parent input[type="text"],
+.parent input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login Button */
+.parent button {
+    width: 100%;
+    padding: 10px;
+    background-color: #42b983;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.parent button:hover {
+    background-color: #35495e;
+}
+
+/* Centering the form */
+.parent {
+    text-align: center;
+}
+
+/* Add some spacing between inputs and labels */
+.parent label,
+.parent input {
+    text-align: left;
+}
+

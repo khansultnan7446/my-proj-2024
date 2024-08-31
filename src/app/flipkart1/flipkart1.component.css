@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Parent Container */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: #86c507;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Child Items */
+.child {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.child:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styles */
+.child img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Title Styles */
+.child h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Rating Styles */
+.child h5 {
+    font-size: 16px;
+    color: #f39c12;
+    margin-bottom: 6px;
+}
+
+/* Rate Styles */
+.child h6 {
+    font-size: 14px;
+    color: #c0392b;
+}

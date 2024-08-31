@@ -1,0 +1,52 @@
+/* Parent container styling */
+.parent {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Image styling */
+.parent img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Headings styling */
+.parent h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+/* Specific styling for different headings */
+.parent h1:first-of-type {
+    color: #3498db;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .parent {
+        padding: 20px;
+    }
+
+    .parent h1 {
+        font-size: 1.5em;
+    }
+
+    .parent h1:first-of-type {
+        font-size: 1.8em;
+    }
+}

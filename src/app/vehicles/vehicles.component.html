@@ -1,0 +1,57 @@
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<label for="">column</label>
+<select name="" id="" [(ngModel)]="column">
+    <option>color</option>
+    <option>type</option>
+</select>
+<label for="">order</label>
+<select name="" id="" [(ngModel)]="order">
+    <option value="asc">Ascending</option>
+    <option value="desc">Desending</option>
+</select>
+
+
+<label for="">limit</label>
+<input type="number" [(ngModel)]="page1">
+<label for="">pagemove</label>
+<input type="number" [(ngModel)]="page2">
+<button (click)="limit()">Search</button>
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>vehicle</th>
+            <th>manufacturer</th>
+            <th>nodel</th>
+            <th>type</th>
+            <th>fuel</th>
+            <th>color</th>
+            <th>image</th>
+            <th>cost</th>
+            <th>id</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+            <td>{{vehicle.Vehicle}}</td>
+            
+            <td>{{vehicle.manufacturer}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.type}}</td>
+            <td>{{vehicle.fuel}}</td>
+            <td>{{vehicle.color}}</td>
+            <img src="{{vehicle.image}}" alt="" width="100px" height="100px">
+            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.id}}</td>
+            <button (click)="view(vehicle.id)">view</button>
+            <button (click)="edit(vehicle.id)">edit</button>
+            <button (click)="delete(vehicle.id)">delete</button>
+
+            
+            
+
+        </tr>
+    </tbody>
+</table>

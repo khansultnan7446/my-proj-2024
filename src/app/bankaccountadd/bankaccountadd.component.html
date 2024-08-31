@@ -1,0 +1,23 @@
+<div class="parent">
+    <form [formGroup]="bankaccountaddform">
+        <h1>{{id ? 'edit account form' : 'create account form'}}</h1>
+
+        <label for="">Account Name</label>
+        <input type="text" formControlName="account_name">
+        <br>
+        <label for="">Account Number</label>
+        <input type="text" formControlName="available_balance">
+        <br>
+
+        <label for="">Account Balance</label>
+        <input type="text" formControlName="account_number">
+        <br>
+        <label for="">City</label>
+        <input type="text" formControlName="city">
+        <br>
+       <button (click)="create()">{{id ? 'Update' : 'Create'}}</button>
+
+
+    </form>
+
+</div>

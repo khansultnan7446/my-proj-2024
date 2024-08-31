@@ -1,0 +1,47 @@
+<p>directives-pipes works!</p>
+<!-- *ngFor -->
+ <h1 *ngFor="let age of ages">
+    my age is {{'ages'}}
+
+ </h1>
+ <ul>
+    <li *ngFor="let state of states">
+        {{state}}
+
+    </li>
+ </ul>
+ <!-- <select name="" id="">
+    <option *ngFor="let state of states; lat i=index" value="">
+       {{i+1}} {{state}}
+    </option>
+ </select>
+ <h3 *ngFor="let user of users">
+    my name is {{user.name}} with age {{user.age}} phone is {{user,phone}}
+
+ </h3>
+ <table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>phone</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.phone}}</td>
+        </tr>
+    </tbody>
+ </table> -->
+
+
+
+ <!-- Pipes -->
+  <h1>{{today}}</h1>
+  <h1>{{ today | date }}</h1>
+  <!-- <h1>{{ today | date:'yyyy-mm-dd' }}</h1>
+  <h1>{{today | 'dd-mmmm-yy'}}</h1>
+  <h1>{{ today | date:'dd-mmm-yyy, hh-mm-ss a EEEE zzz'}}</h1> -->

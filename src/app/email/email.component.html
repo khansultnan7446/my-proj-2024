@@ -1,0 +1,9 @@
+<div class="parent">
+    <div class="child" *ngFor="let email of emails" [ngClass]="
+        {'pass':email.completed==true,'fail':email.completed==false}">
+        {{email.id + '.'}}
+        {{email.title}}
+
+</div>
+    
+</div>

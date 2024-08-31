@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Parent container */
+.parent {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left sidebar */
+.left {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 250px; /* Sidebar width */
+    box-sizing: border-box;
+}
+
+.left h1 {
+    margin-top: 0;
+}
+
+.left hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+}
+
+.left a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    background: #444;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.left a:hover {
+    background: #555;
+}
+
+.left button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.left button:hover {
+    background: #c0392b;
+}
+
+/* Right content area */
+.right {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+}

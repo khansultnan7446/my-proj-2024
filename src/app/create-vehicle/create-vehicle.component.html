@@ -1,0 +1,31 @@
+<div class="parent">
+    <form [formGroup]="vehicleForm">
+    <h1>{{id ? 'Edit vehicle Form' : 'Create Vehicle from'}}</h1>
+
+    <label for="">vehicle</label>
+    <input type="text" formControlName="vehicle">
+    <br>
+    <label for="">manufacturer</label>
+    <input type="text" formControlName="manufacturer">
+    <br>
+    <label for="">Model</label>
+    <input type="text" formControlName="model">
+    <br>
+    <label for="">Type</label>
+    <input type="text" formControlName="type">
+    <br>
+    <label for="">Fuel</label>
+    <input type="text" formControlName="fuel">
+    <br>
+    <label for="">Color</label>
+    <input type="text" formControlName="Color">
+    <br>
+    <label for="">Image</label>
+    <input type="text" formControlName="Image">
+    <br>
+    <label for="">Cost</label>
+    <input type="text" formControlName="cost">
+    <br>
+    <button (click)="create()">{{ id ? 'update' : 'Create'}}</button>
+    </form>
+    </div>
