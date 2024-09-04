@@ -37,7 +37,10 @@
             <td>{{i+1}}></td>
             <td>{{flipkart.productName}}</td>
             <td>{{flipkart.price}}</td>
-            <td>{{flipkart.rating}}</td>
+            <td>
+                <app-rating [rating]="flipkart.rating"></app-rating>
+                </td>
+            
             <td>{{flipkart.freedelivery}}</td>
             <td>
             <!-- <button (click)="delete()">delete</button> -->

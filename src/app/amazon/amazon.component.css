@@ -1,0 +1,55 @@
+/* Styles for the paragraph */
+p {
+    font-size: 20px;
+    color: #333; /* Dark gray text */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  /* Parent container styling */
+  .parent {
+    display: flex;
+    flex-direction: row; /* Arrange children in a row */
+    justify-content: space-between; /* Space between the child and sibling */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Child element styling */
+  .child {
+    flex: 1; /* Take up equal space */
+    margin-right: 20px; /* Space between child and sibling */
+    background-color: #4CAF50; /* Green background */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+  }
+  
+  /* Sibling element styling */
+  .sibling {
+    flex: 2; /* Take up twice the space as the child */
+    display: flex;
+    flex-direction: column; /* Stack sibling components vertically */
+    gap: 10px; /* Space between the sibling components */
+  }
+  
+  .sibling app-amazon2, 
+  .sibling app-amazon3, 
+  .sibling app-amazon4 {
+    background-color: #2196F3; /* Blue background for each component */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    color: white; /* White text color */
+  }
+  
+  /* Optional: Hover effect for sibling components */
+  .sibling app-amazon2:hover, 
+  .sibling app-amazon3:hover, 
+  .sibling app-amazon4:hover {
+    background-color: #1E88E5; /* Darker blue on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  

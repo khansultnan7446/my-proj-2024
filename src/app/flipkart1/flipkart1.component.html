@@ -2,7 +2,7 @@
     <div class="child" *ngFor="let flipkart of flipkarts1">
         <img src="{{flipkart.image}}" alt="">
         <h4>{{flipkart.title}}</h4>
-        <h5>{{flipkart.rating.rate}}</h5>
+        <h5> <app-rating [rating]="flipkart.rating.rate"></app-rating></h5>
         <h6>{{flipkart.category}}</h6>
          </div>
 </div>

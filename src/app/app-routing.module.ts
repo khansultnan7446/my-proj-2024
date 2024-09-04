@@ -18,6 +18,13 @@ import { Login1Component } from './login1/login1.component';
 import { LoginsService } from './logins.service';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewaccountComponent } from './viewaccount/viewaccount.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { ParentComponent } from './parent/parent.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { AmazonComponent } from './amazon/amazon.component';
 
 
 
@@ -38,9 +45,15 @@ const routes: Routes = [
       { path: 'viewaccount/:id' , component:ViewaccountComponent},
       { path: 'editaccount/:id' , component:BankaccountaddComponent},
       { path: 'email',component:EmailComponent},
+      {path : 'calculator', component:CalculatorComponent},
       { path:'login1', component:Login1Component},
       { path:'view-vehicle/:id', component:ViewVehicleComponent},
       { path:'edit-vehicle/:id', component:CreateVehicleComponent},
+      { path : 'student-detail' , component:StudentDetailComponent},
+      { path: 'text-area' , component:TextAreaComponent},
+      { path: 'parent' , component:ParentComponent},
+      { path: 'sibling' , component:SiblingComponent},
+      { path : 'amazon', component:AmazonComponent},
       { path: '', component:HomeComponent },]
   },
   { path: "", component: LoginComponent },

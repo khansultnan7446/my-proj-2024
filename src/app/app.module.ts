@@ -22,6 +22,20 @@ import { BankaccountaddComponent } from './bankaccountadd/bankaccountadd.compone
 import { Login1Component } from './login1/login1.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewaccountComponent } from './viewaccount/viewaccount.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { Amazon1Component } from './amazon1/amazon1.component';
+import { Amazon2Component } from './amazon2/amazon2.component';
+import { Amazon3Component } from './amazon3/amazon3.component';
+import { Amazon4Component } from './amazon4/amazon4.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +56,22 @@ import { ViewaccountComponent } from './viewaccount/viewaccount.component';
     BankaccountaddComponent,
     Login1Component,
     ViewVehicleComponent,
-    ViewaccountComponent
+    ViewaccountComponent,
+  StudentDetailComponent,
+  ParentComponent,
+  ChildComponent,
+  RatingComponent,
+  TextAreaComponent,
+  CalculatorComponent,
+  SiblingComponent,
+  Sibling1Component,
+  Sibling2Component,
+  AmazonComponent,
+  Amazon1Component,
+  Amazon2Component,
+  Amazon3Component,
+  Amazon4Component
+    
   ],
   imports: [
     BrowserModule,

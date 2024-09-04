@@ -1,0 +1,30 @@
+<p>calculator works!</p>
+<div class="calculator">
+    <input type="text" [(ngModel)]="display" class="calculator-display" readonly />
+  
+    <div class="calculator-keys">
+      <button (click)="clear()" class="key">C</button>
+      <button (click)="deleteLast()" class="key">DEL</button>
+      <button (click)="appendOperator('/')" class="key operator">/</button>
+  
+      <button (click)="appendNumber('7')" class="key">7</button>
+      <button (click)="appendNumber('8')" class="key">8</button>
+      <button (click)="appendNumber('9')" class="key">9</button>
+      <button (click)="appendOperator('*')" class="key operator">*</button>
+  
+      <button (click)="appendNumber('4')" class="key">4</button>
+      <button (click)="appendNumber('5')" class="key">5</button>
+      <button (click)="appendNumber('6')" class="key">6</button>
+      <button (click)="appendOperator('-')" class="key operator">-</button>
+  
+      <button (click)="appendNumber('1')" class="key">1</button>
+      <button (click)="appendNumber('2')" class="key">2</button>
+      <button (click)="appendNumber('3')" class="key">3</button>
+      <button (click)="appendOperator('+')" class="key operator">+</button>
+  
+      <button (click)="appendNumber('0')" class="key zero">0</button>
+      <button (click)="appendNumber('.')" class="key">.</button>
+      <button (click)="calculate()" class="key operator">=</button>
+    </div>
+  </div>
+  
