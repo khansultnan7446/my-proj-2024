@@ -1,5 +1,5 @@
 import { Component, createComponent, Directive, NgModule, ViewChildren } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -26,6 +26,7 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { AmazonComponent } from './amazon/amazon.component';
 import { TodoComponent } from './todo/todo.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 
 
@@ -56,6 +57,7 @@ const routes: Routes = [
       { path: 'sibling' , component:SiblingComponent},
       { path : 'amazon', component:AmazonComponent},
       { path : 'todo', component:TodoComponent},
+      { path: 'about-company', component:AboutCompanyComponent},
       { path: '', component:HomeComponent },]
   },
   { path: "", component: LoginComponent },
@@ -64,7 +66,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
