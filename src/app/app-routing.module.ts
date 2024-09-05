@@ -25,6 +25,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { AmazonComponent } from './amazon/amazon.component';
+import { TodoComponent } from './todo/todo.component';
 
 
 
@@ -54,6 +55,7 @@ const routes: Routes = [
       { path: 'parent' , component:ParentComponent},
       { path: 'sibling' , component:SiblingComponent},
       { path : 'amazon', component:AmazonComponent},
+      { path : 'todo', component:TodoComponent},
       { path: '', component:HomeComponent },]
   },
   { path: "", component: LoginComponent },

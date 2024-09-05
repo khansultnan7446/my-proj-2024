@@ -1,0 +1,64 @@
+/* Parent container styling */
+.parent {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    height: 80%;
+  }
+  
+  /* Paragraph styling */
+  .parent p {
+    font-size: 24px;
+    color: #ffffff; /* White text */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    
+  }
+  
+  /* Child container styling */
+  .child {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  /* Individual todo components styling */
+  .child app-todo1, 
+  .child app-todo2, 
+  .child app-todo3 {
+    background-color: #fff; /* White background */
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+    color: #333; /* Dark text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation effect */
+    height: 430px;
+  }
+  
+  /* Hover effect for todo components */
+  .child app-todo1:hover, 
+  .child app-todo2:hover, 
+  .child app-todo3:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Specific colors for each todo component */
+  .child app-todo1 {
+    background-color: #f6d365;
+  }
+  
+  .child app-todo2 {
+    background-color: #fda085;
+  }
+  
+  .child app-todo3 {
+    background-color: #84fab0;
+  }
+  
